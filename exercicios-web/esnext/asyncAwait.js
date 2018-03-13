@@ -24,7 +24,7 @@ const getTurma = letra => {
 
 // Recurso do ES8
 // Objetivo de simplificar o uso de promises...
-let obterAlunos = () => {
+let obterAlunos = async () => {
     const ta = await getTurma('A')
     const tb = await getTurma('B')
     const tc = await getTurma('C')
