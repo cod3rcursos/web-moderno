@@ -1,0 +1,57 @@
+* {
+    font-family: $fonte-principal;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+        "logo cabecalho"
+        "menu conteudo";
+}
+
+aside.logo {
+    grid-area: logo;
+}
+
+header.principal {
+    grid-area: cabecalho;
+}
+
+aside.menu {
+    grid-area: menu;
+}
+
+main.conteudo {
+    grid-area: conteudo;
+}
+
+@media(max-width: $largura-tablet) {
+    body {
+        grid-template-rows: 80px 80px 1fr;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+            "logo cabecalho"
+            "menu menu"
+            "conteudo conteudo";
+    }
+}
+
+@media(max-width: $largura-celular) {
+    body {
+        grid-template-rows: 80px 80px 80px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "cabecalho"
+            "menu"
+            "conteudo";
+    }
+}

@@ -1,0 +1,15 @@
+header.principal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header.principal button {
+    margin: 5px;
+}
+
+@media(max-width: $largura-celular) {
+    header.principal {
+        justify-content: center;
+    }
+}
