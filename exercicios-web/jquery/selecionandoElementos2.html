@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Selecionando Elementos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 95px 1fr 55px;
+            grid-template-areas: "cabecalho cabecalho" "menu conteudo" "rodape rodape";
+        }
+
+        header {
+            grid-area: cabecalho;
+            background-color: #fff;
+            color: #000;
+            padding-left: 20px;
+        }
+
+        aside.menu {
+            grid-area: menu;
+        }
+
+        main {
+            grid-area: conteudo;
+            background-color: #dedede;
+            color: #000;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: rodape;
+            background-color: #fff;
+            color: #000;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+    </header>
+    <aside class="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#link1">Link 1</a>
+                </li>
+                <li>
+                    <a href="#link2">Link 2</a>
+                </li>
+                <li>
+                    <a href="#link3">Link 3</a>
+                </li>
+                <li>
+                    <a href="#link4">Link 4</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="conteudo-principal">
+        <h1>Título do Conteúdo</h1>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <span>Dentro do Span</span>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Cod3r Ensino</p>
+    </footer>
+    <script>
+        const comBorda = { 'border': 'solid 8px orange' }
+        const semBorda = { 'border': 'none' }
+
+        $('a[href="#link3"]').parent().css(comBorda).css(semBorda)
+
+        $('li:last').prev().css(comBorda).css(semBorda)
+        $('a[href="#link3"]').parent().next().css(comBorda).css(semBorda)
+
+        $('a[href="#link1"]').parents().css(comBorda).css(semBorda)
+        $('a[href="#link1"]').parentsUntil($('body')).css(comBorda).css(semBorda)
+
+        $('main').children().css(comBorda).css(semBorda)
+
+        $('body').find('a').css(comBorda).css(semBorda)
+
+        const elementoDOM = document.getElementsByClassName('menu')
+        $(elementoDOM).css(comBorda)
+
+        $('main').children().each((i, e) => $(e).css(comBorda).css(semBorda))
+        $('li').each((i, e) => {
+            $(e).css(comBorda)
+        })
+    </script>
+</body>

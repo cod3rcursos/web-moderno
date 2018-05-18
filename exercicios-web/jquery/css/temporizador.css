@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Thin.ttf') format('truetype');
+}
+
+* {
+    font-family: 'RobotoMono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80));
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.temporizador .digito {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 3em;
+}
+
+.temporizador .separador {
+    color: #000;
+    margin: 5px;
+    font-size: 4em;
+}
+
+.temporizador .mensagem {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
