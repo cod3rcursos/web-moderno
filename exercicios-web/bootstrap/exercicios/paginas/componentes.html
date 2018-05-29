@@ -1,0 +1,253 @@
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Componentes</h1>
+    <p class="lead m-1">Exemplo de alguns componentes do Bootstrap.</p>
+</div>
+
+<nav class="mb-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#/paginas/bemVindo.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Componentes</li>
+    </ol>
+</nav>
+
+<h1>1. Botões -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Botões -->
+<div>
+    <div class="mb-3">
+        <button class="btn btn-primary">Salvar</button>
+        <button class="btn btn-secondary">Cancelar</button>
+        <button class="btn btn-outline-success">Finalizar</button>
+        <button class="btn btn-danger" disabled>Excluir</button>
+        <button class="btn btn-warning" data-toggle="button">Selecione</button>
+    </div>
+
+    <div class="btn-group mb-3">
+        <button class="btn btn-info">Esquerda</button>
+        <button class="btn btn-info active">Centro</button>
+        <button class="btn btn-info">Direita</button>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">
+            Comprar!
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Paypal</a>
+            <a href="#" class="dropdown-item">Pagseguro</a>
+        </div>
+    </div>
+</div>
+
+<h1 class="mt-5">2. Progresso -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/progress/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Progresso -->
+<div>
+    <div class="progress mb-4">
+        <div class="progress-bar" style="width: 25%;"></div>
+    </div>
+
+    <div class="progress mb-4">
+        <div class="progress-bar progress-bar-striped bg-success" style="width: 80%;">80%</div>
+    </div>
+
+    <div class="progress" style="height: 40px;">
+        <div class="progress-bar" style="width: 15%">15%</div>
+        <div class="progress-bar bg-danger" style="width: 30%">30%</div>
+        <div class="progress-bar bg-info" style="width: 20%">20%</div>
+        <div class="progress-bar bg-warning" style="width: 25%">25%</div>
+    </div>
+</div>
+
+<h1 class="mt-5">3. Mensagens (Alertas) -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Alertas -->
+<div>
+    <div class="alert alert-success">
+        Operação realizada com sucesso!
+    </div>
+    <div class="alert alert-warning">
+        <strong>Cuidado!</strong> Operação gerou impacto no estoque!
+    </div>
+    <div class="alert alert-danger">
+        <strong>Erro!</strong> Ocorreu um erro inesperado!
+        <a href="#" class="alert-link">Mais detalhes</a>
+    </div>
+    <div class="alert alert-success">
+        <h4 class="alert-heading">Parabéns!</h4>
+        <p>Processo realizado com sucesso!</p>
+        <hr>
+        <p class="mb-0">Pode ficar orgulhoso!</p>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+
+<h1 class="mt-5">4. Paginação -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/pagination/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Paginação -->
+<div>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">Anterior</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<h1 class="mt-5">5. Tooltip -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/tooltip/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Tooltip -->
+<div>
+    <div class="alert alert-warning">
+        Precisa chamar um função JS!
+        <strong>E agora?</strong>
+    </div>
+
+    <button class="btn btn-danger"
+        data-toggle="tooltip" data-placement="right"
+        title="Pense antes!">
+        Excluir
+    </button>
+</div>
+
+<h1 class="mt-5">6. Slider -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/carousel/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Slider -->
+<div>
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner bg-dark">
+            <div class="carousel-item active">
+                <img src="/imgs/slide1.png" alt="Slide1"
+                    class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/slide2.png" alt="Slide2"
+                    class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="/imgs/slide3.png" alt="Slide3"
+                    class="d-block mx-auto">
+            </div>
+        </div>
+        <a href="#slider" class="carousel-control-prev"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next"
+            data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<h1 class="mt-5">7. Accordion -
+    <small>
+        <a href="https://getbootstrap.com/docs/4.0/components/collapse/" target="_black">Documentação Oficial</a>
+    </small>
+</h1>
+<hr>
+
+<!-- Accordion -->
+<div>
+    <div class="mb-5" id="accordion">
+        <div class="card">
+            <div class="card-header" id="pegunta1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta1">
+                        Quem é o professor de programação mais legal?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta1" data-parent="#accordion">
+                <div class="card-body">
+                    Posso dizer? :)
+                </div>
+            </div>
+            <div class="card-header" id="pegunta2">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta2">
+                        Teste 2?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta2" data-parent="#accordion">
+                <div class="card-body">
+                    Teste 2!
+                </div>
+            </div>
+            <div class="card-header" id="pegunta3">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta3">
+                        Teste 3?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta3" data-parent="#accordion">
+                <div class="card-body">
+                    Teste 3!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // funciona?
+    $('[data-toggle="tooltip"]').tooltip()
+</script>
