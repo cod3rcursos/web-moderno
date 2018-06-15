@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Componente</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="app">  
+        <contador></contador>
+        <contador></contador>
+        <contador></contador>
+    </div>
+    <script>
+        Vue.component('contador', {
+            data: function() {
+                return {
+                    contador: 0
+                }
+            },
+            methods: {
+                add() {
+                    this.contador++
+                }
+            },
+            template: `
+                <div>
+                    <span>{{ contador }}</span>
+                    <button @click="add">+1</button>
+                    <button @click="contador--">-1</button>
+                </div>
+            `
+        })
+
+        new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+</html>
