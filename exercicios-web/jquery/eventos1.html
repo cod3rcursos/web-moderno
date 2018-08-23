@@ -43,7 +43,8 @@
 
         $('input').keyup(function (e) {
             const valor = $(this).val()
-            if (valor.match(/#[\da-fA-F]{6}/)) {
+            if (valor.match(/#[\da-fA-F]{6}/)
+                || valor.match(/#[\da-fA-F]{3}/)) {
                 $('body').css('background-color', valor)
             } else {
                 $('body').css('background-color', backgroundOriginal)

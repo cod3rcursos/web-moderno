@@ -1,0 +1,29 @@
+<estados>
+    <estado id="1" nome="Acre" sigla="AC" />
+    <estado id="2" nome="Alagoas" sigla="AL" />
+    <estado id="3" nome="Amapá" sigla="AP" />
+    <estado id="4" nome="Amazonas" sigla="AM" />
+    <estado id="5" nome="Bahia" sigla="BA" />
+    <estado id="6" nome="Ceará" sigla="CE" />
+    <estado id="7" nome="Distrito Federal" sigla="DF" />
+    <estado id="8" nome="Espírito Santo" sigla="ES" />
+    <estado id="9" nome="Goiás" sigla="GO" />
+    <estado id="10" nome="Maranhão" sigla="MA" />
+    <estado id="11" nome="Mato Grosso" sigla="MT" />
+    <estado id="12" nome="Mato Grosso do Sul" sigla="MS" />
+    <estado id="13" nome="Minas Gerais" sigla="MG" />
+    <estado id="14" nome="Pará " sigla="PA" />
+    <estado id="15" nome="Paraíba" sigla="PB" />
+    <estado id="16" nome="Paraná" sigla="PR" />
+    <estado id="17" nome="Pernambuco" sigla="PE" />
+    <estado id="18" nome="Piauí" sigla="PI" />
+    <estado id="19" nome="Rio de Janeiro" sigla="RJ" />
+    <estado id="20" nome="Rio Grande do Norte" sigla="RN" />
+    <estado id="21" nome="Rio Grande do Sul" sigla="RS" />
+    <estado id="22" nome="Rondônia" sigla="RO" />
+    <estado id="23" nome="Roraima" sigla="RR" />
+    <estado id="24" nome="Santa Catarina" sigla="SC" />
+    <estado id="25" nome="São Paulo" sigla="SP" />
+    <estado id="26" nome="Sergipe" sigla="SE" />
+    <estado id="27" nome="Tocantins" sigla="TO" />
+</estados>
