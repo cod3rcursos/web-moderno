@@ -3,7 +3,7 @@ const porta = 3003
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const bancoDeDados = require('./bancoDeDados')
+const bancoDeDados = require('./bancoDeDados').db
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
