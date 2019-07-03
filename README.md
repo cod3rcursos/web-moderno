@@ -11,28 +11,28 @@ Este repositório foi criado com a intenção de registrar e ajudar os desenvolv
 
 1. **[Introducão]**
 2. **[Configuração do ambiente]**
-3. **[Javascript: Fundamentos]**
-4. **[Javascript: Estruturas de controle]**
-5. **[Javascript: Função]**
-6. **[Javascript: Objeto]**
-7. **[Javascript: Array]**
-8. **[Node]**
-9. **[ESNext]**
+3. **[Javascript: Fundamentos](/exercicios-web/fundamentos)**
+4. **[Javascript: Estruturas de controle](/exercicios-web/controle)**
+5. **[Javascript: Função](/exercicios-web/funcao)**
+6. **[Javascript: Objeto](/exercicios-web/objeto)**
+7. **[Javascript: Array](/exercicios-web/array)**
+8. **[Node](/exercicios-web/node)**
+9. **[ESNext](/exercicios-web/esnext)**
 10. **[Conceitos da Web]**
-11. **[HTML]**
-12. **[CSS]**
-13. **[Integrando HTML, CSS e JS]**
-14. **[Ajax]**
-15. **[Gulp]**
-16. **[Webpack]**
-17. **[Jquery]**
-18. **[Bootstrap]**
-19. **[Projeto Galeria (Bootstrap,jQuery, Webpack)]**
-20. **[Projeto React]**
-21. **[Projeto Calculadora]**
+11. **[HTML](/exercicios-web/html)**
+12. **[CSS](/exercicios-web/css)**
+13. **[Integrando HTML, CSS e JS](/exercicios-web/dom)**
+14. **[Ajax](/exercicios-web/ajax)**
+15. **[Gulp](/exercicios-web/gulp)**
+16. **[Webpack](/exercicios-web/webpack)**
+17. **[Jquery](/exercicios-web/jquery)**
+18. **[Bootstrap](/exercicios-web/bootstrap)**
+19. **[Projeto Galeria (Bootstrap, jQuery, Webpack)]**
+20. **[Projeto React](/exercicios-web/react)**
+21. **[Projeto Calculadora](/exercicios-web/react)**
 22. **[Projeto Cadastro de Usúario]**
-23. **[VueJs]**
-24. **[Projetos VueJs]**
+23. **[VueJs](/exercicios-web/vue)**
+24. **[Projetos VueJs](/exercicios-web/vue)**
 25. **[Projetos Calculadora (Vue)]**
 26. **[Projeto Monty Hall (Vue)]**
 27. **[Banco Relacional]**
