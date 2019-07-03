@@ -33,11 +33,11 @@ Este repositório foi criado com a intenção de registrar e ajudar os desenvolv
 22. **[Projeto Cadastro de Usúario]**
 23. **[VueJs](/exercicios-web/vue)**
 24. **[Projetos VueJs](/exercicios-web/vue)**
-25. **[Projetos Calculadora (Vue)]**
-26. **[Projeto Monty Hall (Vue)]**
-27. **[Banco Relacional]**
-28. **[Banco Não Relacional]**
-29. **[Banco Express]**
+25. **[Projetos Calculadora (Vue)](/exercicios-web/vue)**
+26. **[Projeto Monty Hall (Vue)](/exercicios-web/vue)**
+27. **[Banco Relacional](/exercicios-web/banco-relacional)**
+28. **[Banco Não Relacional](/exercicios-web/banco-nao-relacional)**
+29. **[Express](/exercicios-web/exercicios-express)**
 30. **[Projeto Base de Conhecimento * Backend]**
 31. **[Projeto Base de Conhecimento * Frontend]**
 32. **[Publicando uma Aplicação VueJs na Amazon S3]**
