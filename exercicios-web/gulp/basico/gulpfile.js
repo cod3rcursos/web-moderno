@@ -1,30 +1,36 @@
 const gulp = require('gulp')
+const { series, parallel } = require('gulp')
 
-gulp.task('default', () => {
-    gulp.start('copiar', 'fim')
-})
+const antes1 = cb => {
+    console.log('Tarefa Antes 1!')
+    return cb()
+}
 
-gulp.task('copiar', ['antes1', 'antes2'], () => {
-    return gulp.src('pastaA/**/*.txt')
-        // .pipe(transformacao1())
-        // .pipe(transformacao2())
+const antes2 = cb => {
+    console.log('Tarefa Antes 2!')
+    return cb()
+}
+
+function copiar(cb) {
+    // gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
+
+    gulp.src('pastaA/**/*.txt')
+        // .pipe(imagePelaMetade())
+        // .pipe(imageEmPretoEBranco())
+        // .pipe(transformacaoA())
+        // .pipe(transformacaoB())
+        // .pipe(transformacaoC())
         .pipe(gulp.dest('pastaB'))
-})
+    return cb()
+}
 
-gulp.task('antes1', () => {
-    console.log('Antes 1!!!')
-})
+const fim = cb => {
+    console.log('Tarefa Fim!')
+    return cb()
+}
 
-gulp.task('antes2', () => {
-    console.log('Antes 2!!!')
-})
-
-gulp.task('fim', ['fim1', 'fim2'])
-
-gulp.task('fim1', () => {
-    console.log('Fim 1!!!')
-})
-
-gulp.task('fim2', () => {
-    console.log('Fim 2!!!')
-})
+module.exports.default = series(
+    parallel(antes1, antes2),
+    copiar,
+    fim,
+)
