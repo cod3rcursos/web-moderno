@@ -1,0 +1,49 @@
+aside.menu-area {
+    background-color: $cor-bg-escura;
+    color: $cor-branca;
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 15px 0 rgba(0, 0, 0, 0.09);
+}
+
+.menu a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.menu a:hover, .menu .selecionado {
+    background: $gradiente-1;
+}
+
+.menu a.logo:hover {
+    background: none;
+}
+
+@media(max-width: $largura-sm-max) {
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .menu a {
+        display: inline;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
+@media(max-width: $largura-sm-max) {
+    .menu {
+        height: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: $largura-xs-max) {
+    .menu {
+        height: 100%;
+    }
+}

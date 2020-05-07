@@ -1,0 +1,36 @@
+aside.menu {
+    background-color: $cor-bg-escura;
+    padding: 10px;
+}
+
+aside.menu a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    margin: 10px 0px;
+    padding: 5px; 
+    font-size: $tamanho-medio;
+}
+
+aside.menu a:hover {
+    background-color: $cor-primaria;
+}
+
+@media(max-width: $largura-tablet) {
+    aside.menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    aside.menu a {
+        display: inline;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
+@media(max-width: $largura-celular) {
+    aside.menu {
+        justify-content: center;
+    }
+}

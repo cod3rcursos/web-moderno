@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    font-family: $fonte-principal;
+}
+
+html {
+    height: 100vh;
+}
+
+/* Layout em Grid */
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: $largura-barra-lateral 1fr;
+    grid-template-rows: $altura-cabecalho 1fr $altura-rodape;
+    grid-template-areas: 
+        "logo cabecalho"
+        "menu conteudo"
+        "menu rodape";
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+aside.logo {
+    grid-area: logo;
+}
+
+header.cabecalho {
+    grid-area: cabecalho;
+}
+
+aside.menu-area {
+    grid-area: menu;
+}
+
+main.conteudo {
+    grid-area: conteudo;
+}
+
+footer.rodape {
+    grid-area: rodape;
+}
+
+@media(max-width: $largura-sm-max) {
+    body {
+        grid-template-rows: $altura-cabecalho $altura-menu-top 1fr $altura-rodape;
+        grid-template-columns: $largura-barra-lateral 1fr;
+        grid-template-areas: 
+            "logo cabecalho"
+            "menu menu"
+            "conteudo conteudo"
+            "rodape rodape";
+    }
+}
+
+@media(max-width: $largura-xs-max) {
+    body {
+        grid-template-rows: $altura-logo $altura-cabecalho $altura-menu-top 1fr $altura-rodape;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "rodape";
+    }
+}

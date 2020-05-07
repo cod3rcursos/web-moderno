@@ -8,7 +8,3 @@ var c = new produto_1.Carro;
 c.nome = 'Civic';
 c.preco = 89499.00;
 exibir(c);
-function soma(a, b) {
-    return a + b;
-}
-console.log(soma(2, 3));

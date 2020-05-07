@@ -1,0 +1,16 @@
+button {
+    font-size: $tamanho-medio;
+    border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.botao-destaque {
+    background-color: $cor-bg-vermelho;
+    color: $cor-branca;
+}
+
+.botao-sucesso {
+    background-color: $cor-bg-verde;
+    color: $cor-branca;
+}
