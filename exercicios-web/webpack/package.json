@@ -16,7 +16,7 @@
     "cross-env": "5.1.5",
     "optimize-css-assets-webpack-plugin": "4.0.1",
     "uglifyjs-webpack-plugin": "1.2.5",
-    "node-sass": "4.9.0",
+    "node-sass": "4.13.1",
     "sass-loader": "7.0.1",
     "mini-css-extract-plugin": "0.4.0",
     "css-loader": "0.28.11",
