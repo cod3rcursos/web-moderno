@@ -1,7 +1,6 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "",
   "main": "src/servidor.js",
   "scripts": {
     "start": "nodemon",
@@ -15,6 +14,7 @@
     "express": "4.16.2"
   },
   "devDependencies": {
-    "nodemon": "1.14.11"
-  }
+    "nodemon": "^2.0.19"
+  },
+  "description": ""
 }

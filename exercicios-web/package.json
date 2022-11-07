@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.1.0"
+  }
+}

@@ -5,12 +5,13 @@
   "main": "funcionarios.js",
   "scripts": {
     "start": "nodemon",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "0.17.1"
+    "axios": "^0.27.2"
   }
 }

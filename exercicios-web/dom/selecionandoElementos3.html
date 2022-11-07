@@ -22,7 +22,7 @@
 
 <body class="conteudo exercicio">
     <h1>Formulário</h1>
-    <form name="pesquisa" action="http://www.google.com.br/search">
+    <form name="pesquisa" action="http://www.google.com.br/search" target="_blank">
         <input type="text" name="q" placeholder="Digite o termo...">
         <select name="hl">
             <option value="pt-br">Português (Brasil)</option>
@@ -36,7 +36,7 @@
         console.log(document.getElementsByName('pesquisa'))
         console.log(document.pesquisa)
         console.log(document.pesquisa.q)
-        document.pesquisa.q.value = 'Linux Brasil'
+        //document.pesquisa.q.value = 'Linux Brasil'
         document.pesquisa.hl.value = 'en-us'
         console.log(document.pesquisa.hl.selectedIndex)
     </script>

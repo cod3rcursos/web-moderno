@@ -42,6 +42,8 @@
             }
 
             const resultado = document.getElementById('resultado')
+
+            // MÉTODO FETCH
             // fetch(form.action, options)
             //     .then(resp => resp.json())
             //     .then(json => {
@@ -50,7 +52,8 @@
             //     .catch(e => {
             //         resultado.innerHTML = e
             //     })
-            
+
+            // MÉTODO ASYNC AWAIT 
             try {
                 const resp = await fetch(form.action, options)
                 const json = await resp.json()
