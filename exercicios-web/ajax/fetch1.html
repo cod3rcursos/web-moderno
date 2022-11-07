@@ -16,7 +16,7 @@
             .then(resp => resp.json())
             .then(estados => {
                 const itens = estados.reduce(
-                    (html, estado) => html + `<li>${estado.nome}</li>`, ''
+                    (html, estado) => html + `<li>${estado.nome} - ${estado.sigla} - ${estado.percent}</li></li>`, ''
                 )
                 document.body.insertAdjacentHTML('beforeend', `<ul>${itens}</ul>`)
             })

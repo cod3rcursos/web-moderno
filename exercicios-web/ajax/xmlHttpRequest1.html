@@ -11,6 +11,8 @@
     <h1>Estados</h1>
 
     <script>
+
+        // Função Ajax que recebe um objeto de configuração 
         function ajax(config) {
             const xhr = new XMLHttpRequest()
             xhr.open(config.metodo, config.url, true)
@@ -29,8 +31,10 @@
             xhr.send()
         }
 
+        // Manipulando a DOM para criar a tabela automaticamente a partir do estado.json
         function criarTabela(estados) {
             const linhas = estados.map(estado => {
+
                 const tdId = document.createElement('td')
                 tdId.innerHTML = estado.id
 
@@ -40,11 +44,15 @@
                 const tdSigla = document.createElement('td')
                 tdSigla.innerHTML = estado.sigla
 
+                const tdPercent = document.createElement('td')
+                tdPercent.innerHTML = estado.percent
+
                 const tr = document.createElement('tr')
 
                 tr.appendChild(tdId)
                 tr.appendChild(tdNome)
                 tr.appendChild(tdSigla)
+                tr.appendChild(tdPercent)
 
                 return tr
             })
@@ -54,6 +62,7 @@
             document.body.appendChild(tabela)
         }
 
+        // Chamando a função Ajax passando os parametros necessários
         ajax({
             url: "dados/estados.json",
             metodo: "get",

@@ -11,6 +11,7 @@ const antes2 = cb => {
     return cb()
 }
 
+// Passando arquivos da pasta A pra pasta B
 function copiar(cb) {
     // gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
 

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "gulp-cli": "^2.3.0"
+  }
+}

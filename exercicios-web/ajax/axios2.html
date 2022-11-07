@@ -14,16 +14,19 @@
     <div id="post"></div>
 
     <script>
+
+        // Função para printar resultados na tela (passando o .json para string e incluindo via id)
         function exibirResultado(id, dados) {
             const texto = JSON.stringify(dados)
             document.getElementById(id).innerHTML = texto
         }
 
+        // Forma reduzida pq o padrão da requisição é get (expecificando o valor do número na URL)
         // axios('parOuImpar?numero=10').then(resp => exibirResultado('get', resp.data))
         
         axios.get('parOuImpar', {
             params: {
-                numero: 6
+                numero: 3
             }
         }).then(resp => exibirResultado('get', resp.data))
 

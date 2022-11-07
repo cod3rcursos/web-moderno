@@ -25,9 +25,11 @@ class CicloFinanceiro {
     }
 }
 
-const salario = new Lancamento('Salario', 45000)
+const salario = new Lancamento('Salario', 4500)
 const contaDeLuz = new Lancamento('Luz', -220)
+const cartaoDeCredito = new Lancamento('Cartao', -1400)
+const aluguel = new Lancamento('Aluguel', -2000)
 
 const contas = new CicloFinanceiro(6, 2018)
-contas.addLancamentos(salario, contaDeLuz)
+contas.addLancamentos(salario, contaDeLuz, cartaoDeCredito, aluguel)
 console.log(contas.sumario())

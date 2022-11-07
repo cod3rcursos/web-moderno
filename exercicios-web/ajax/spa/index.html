@@ -20,34 +20,52 @@
 
 <body class="conteudo">
     <nav>
+        <a href="http://localhost:8080/">Voltar para o menu</a> |
+        <a href wm-link="return.html" wm-destino=".pagina">Return</a> |
         <a href wm-link="series.html" wm-destino=".pagina">Séries</a> |
         <a href wm-link="linguagens.html" wm-destino=".pagina">Linguagens</a>
     </nav>
     <div class="pagina"></div>
     <script>
+        // Função para carregar a visualização da página dentro de index.html
         function navegarViaAjax(url, seletor, push = true) {
             if(!url || !seletor) return
+            // Obtendo o elemento através do seletor (pegando os dados da página e colocando na constante elemento)
             const elemento = document.querySelector(seletor)
+
+            // Fetch fazendo requisição Ajax utilizando a url
             fetch(url)
+                // Pegando o texto do HTML através do .text
                 .then(resp => resp.text())
                 .then(html => {
+                    // Colocando a constante com o conteúdp HTML dentro da div
                     elemento.innerHTML = html
+
+                    // Função push ativada pelo true para atualizar a URL na parte superior do browser (se false ficaria estática no index.html)
                     if(push) {
                         history.pushState({ seletor }, "Página Ajax", url)
                     }
                 })
         }
-
+        // Trocando funcionalidade normal do link para o carregamento do HTML dentra da div
+        // Pegando todos os links marcados com wm-link
         document.querySelectorAll('[wm-link]').forEach(link => {
+            // Aramazenando o valor do link em uma URL (endereço da página)
             const url = link.attributes['wm-link'].value
+
+            // Armazenando o valor do link em uma constante (para onde a página leva)
             const seletorDestino = link.attributes['wm-destino'].value
 
+            // Interceptando o evento de click no link
             link.onclick = e => {
+                // Desabilitando configurações default do click no link
                 e.preventDefault()
+                // Ao invés de redirecionar a página do link, é chamada a função acima para colocar o corpo da página dentro da div
                 navegarViaAjax(url, seletorDestino)
             }
         })
 
+        // Embora esteja na mesma página, é possível controlar o estado da URL
         window.onpopstate = e => {
             if(e.state) {
                 navegarViaAjax(window.location.href, e.state.seletor, false)

@@ -1,7 +1,6 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,10 +14,10 @@
     "gulp": "4.0.2",
     "gulp-babel": "7.0.1",
     "gulp-concat": "2.6.1",
-    "gulp-sass": "4.0.1",
     "gulp-typescript": "4.0.2",
     "gulp-uglify": "3.0.0",
     "gulp-uglifycss": "1.0.9",
     "typescript": "2.8.3"
-  }
+  },
+  "description": ""
 }

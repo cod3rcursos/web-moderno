@@ -5,6 +5,7 @@
     <meta charset='UTF-8'>
     <title>Ajax com jQuery</title>
     <link rel='stylesheet' href='css/estilo.css'>
+    <!-- Importando o jQuery -->
     <script src="js/jquery.js"></script>
 </head>
 
@@ -19,6 +20,7 @@
             document.getElementById(id).innerHTML = texto
         }
 
+        // Referenciando o JQuery atravé do dolar
         $.ajax({
             url: 'parOuImpar',
             data: {
