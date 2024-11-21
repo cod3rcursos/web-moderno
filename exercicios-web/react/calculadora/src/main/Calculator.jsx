@@ -55,13 +55,15 @@ export default class Calculator extends Component {
     }
 
     addDigit(n) {
-        if (n === '.' && this.state.displayValue.includes('.')) {
+        if (n === '.' 
+                && this.state.displayValue.toString().includes('.') 
+                && this.state.values[this.state.current].toString().includes('.')) {
             return
         }
 
         const clearDisplay = this.state.displayValue === '0'
             || this.state.clearDisplay
-        const currentValue = clearDisplay ? '' : this.state.displayValue
+        const currentValue = clearDisplay ? n === '.' ? '0' : '' : this.state.displayValue
         const displayValue = currentValue + n
         this.setState({ displayValue, clearDisplay: false })
 
